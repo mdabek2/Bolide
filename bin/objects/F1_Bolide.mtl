@@ -1,0 +1,11 @@
+newmtl Body_PBR_Material
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures\merged1_diffuse.png
+map_Ns textures\merged_roughness.png
+map_refl textures\merged_metallic.png
+map_Bump -bm 1.000000 textures\merged_normal.png
