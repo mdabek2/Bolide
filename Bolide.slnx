@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Bolide/Bolide.vcxproj" Id="09a9030d-687d-41bc-9b8e-1b2c3158b6ec" />
+</Solution>
