@@ -28,15 +28,15 @@ The current version of the project includes:
 
 ### Bolide Front View
 
- ![Bolide view](Images/gameplay_bolide_front.png)
+![Bolide view](Images/gameplay_bolide_front.png)
  
- ### Bolide Back View
+### Bolide Back View
 
- ![Bolide view](Images/gameplay_bolide.png)
+![Bolide view](Images/gameplay_bolide.png)
 
 ### Driver / Cockpit View
 
- ![Driver view](Images/gameplay_driver.png)
+![Driver view](Images/gameplay_driver.png)
 
 ## 3D Assets
 
