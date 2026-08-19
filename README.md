@@ -20,7 +20,7 @@ The current version of the project includes:
 - car movement based on its current orientation,
 - several camera modes.
 
-## 📷 Game Screenshots
+## Game Screenshots
 
 ### Track View
 
@@ -38,7 +38,7 @@ The current version of the project includes:
 
  `![Gameplay](images/gameplay.png)`
 
-## 🎨 3D Assets
+## 3D Assets
 
 The project uses 3D models sourced from **Sketchfab**. The original models and their respective copyrights belong to their authors. The links below lead to the original model pages.
 
@@ -58,7 +58,11 @@ The model is used as the main playable bolide in the project.
 
 > **Credits:** The 3D assets are used for educational and development purposes. Please refer to the original Sketchfab pages for information about the creators and the licenses under which the models were published.
 
-## 🎥 Camera Modes
+## 3D Scene
+
+The main scene consists of a **Monza** circuit model with a **Formula 1** bolide placed on the track. Separate shaders are used for the main objects and the skybox. Shadows are generated in a separate rendering pass using a depth map.
+
+## Camera Modes
 
 The camera can operate in several modes:
 
@@ -71,9 +75,9 @@ The camera can operate in several modes:
 
 ### Free Camera
 
-In free camera mode, the camera can be moved around the scene. The viewing direction is controlled with the mouse while holding the right mouse button.
+In free camera mode, the camera can be moved around the scene. The viewing direction is controlled with the mouse movement and while holding the right mouse button.
 
-## 🏎️ Controls
+## Controls
 
 | Key | Action |
 |---|---|
@@ -86,7 +90,7 @@ In free camera mode, the camera can be moved around the scene. The viewing direc
 
 The bolide movement is calculated relative to its current orientation, so accelerating moves the car in the direction in which it is facing.
 
-## 🛠️ Technologies and Libraries
+## Technologies and Libraries
 
 The project uses:
 
@@ -101,38 +105,7 @@ The project uses:
 
 The required libraries are included in the `Dependencies/` directory.
 
-## 📁 Project Structure
-
-```text
-Bolide/
-├── Bolide.slnx
-├── Bolide/
-│   ├── inc/                 # Header files for project classes and components
-│   ├── src/                 # Application source code
-│   │   └── main.cpp
-│   ├── shaders_config/      # GLSL shaders
-│   └── Bolide.vcxproj       # Visual Studio project configuration
-├── Dependencies/            # External libraries
-└── README.md
-```
-
-The main project components include classes responsible for the camera, shaders, 3D models, textures, skybox and shadows.
-
-## ▶️ Building and Running
-
-1. Clone the repository.
-2. Open `Bolide.slnx` in Visual Studio.
-3. Make sure the `x64` configuration is selected.
-4. Build the project.
-5. Run the application.
-
-The project is configured for **C++20** and uses the libraries included in the `Dependencies/` directory.
-
-## 🌍 3D Scene
-
-The main scene consists of a **Monza** circuit model with a Formula 1 bolide placed on the track. Separate shaders are used for the main objects and the skybox. Shadows are generated in a separate rendering pass using a depth map.
-
-## 🚧 Future Development
+## Future Development
 
 The next planned step is to **implement gravity and more advanced physics for the bolide**.
 
@@ -140,6 +113,6 @@ Gravity will be particularly important because the track is not completely flat 
 
 Further improvements to the physics and driving behavior are also planned to make the movement of the bolide more realistic.
 
-## 📌 Project Status
+## Project Status
 
 The project is currently under development. The basic rendering system, 3D models, camera system and basic bolide movement have already been implemented. Further development is focused on expanding the physics system and improving the realism of driving.
