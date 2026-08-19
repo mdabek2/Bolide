@@ -1,10 +1,10 @@
 # Bolide
 
-A 3D racing game project developed in **C++** using **OpenGL**. The goal of the project is to create an environment where the player can control a Formula 1 car driving on a recreated **Monza** circuit.
+A 3D racing game project developed in **C++** using **OpenGL**. The goal of the project is to create an environment where the player can control a **Formula 1** car driving on a recreated **Monza** circuit.
 
 The project is developed as a desktop application for Windows using Visual Studio.
 
-## 🎮 Current Features
+## Current Features
 
 The current version of the project includes:
 
@@ -18,40 +18,25 @@ The current version of the project includes:
 - depth testing,
 - object transparency using blending,
 - car movement based on its current orientation,
-- acceleration and braking,
-- maximum speed limitation,
-- friction and gradual deceleration,
-- steering while driving,
-- the ability to stop the car,
 - several camera modes.
 
 ## 📷 Game Screenshots
 
 ### Track View
 
-> **Screenshot placeholder:**
->
-> `![Track view](images/gameplay_track.png)`
+`![Track view](images/gameplay_track.png)`
 
 ### Bolide View
 
-> **Screenshot placeholder:**
->
-> `![Bolide view](images/gameplay_bolide.png)`
+ `![Bolide view](images/gameplay_bolide.png)`
 
 ### Driver / Cockpit View
 
-> **Screenshot placeholder:**
->
-> `![Driver view](images/gameplay_driver.png)`
+ `![Driver view](images/gameplay_driver.png)`
 
 ### Additional Gameplay Screenshot
 
-> **Screenshot placeholder:**
->
-> `![Gameplay](images/gameplay.png)`
-
-Screenshots can be added later to the `images/` directory.
+ `![Gameplay](images/gameplay.png)`
 
 ## 🎨 3D Assets
 
