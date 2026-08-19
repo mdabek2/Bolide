@@ -24,19 +24,19 @@ The current version of the project includes:
 
 ### Track View
 
-`![Track view](images/gameplay_track.png)`
+![Track view](Images/gameplay_track.png)
 
-### Bolide View
+### Bolide Front View
 
- `![Bolide view](images/gameplay_bolide.png)`
+ ![Bolide view](Images/gameplay_bolide_front.png)
+ 
+ ### Bolide Back View
+
+ ![Bolide view](Images/gameplay_bolide.png)
 
 ### Driver / Cockpit View
 
- `![Driver view](images/gameplay_driver.png)`
-
-### Additional Gameplay Screenshot
-
- `![Gameplay](images/gameplay.png)`
+ ![Driver view](Images/gameplay_driver.png)
 
 ## 3D Assets
 
