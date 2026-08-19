@@ -53,6 +53,26 @@ The current version of the project includes:
 
 Screenshots can be added later to the `images/` directory.
 
+## 🎨 3D Assets
+
+The project uses 3D models sourced from **Sketchfab**. The original models and their respective copyrights belong to their authors. The links below lead to the original model pages.
+
+### 🏁 Autodromo Nazionale Monza Circuit
+
+**Asset:** Autodromo Nazionale Monza Circuit – 2020 Layout  
+**Source:** [View model on Sketchfab](https://sketchfab.com/3d-models/autodromo-nazionale-monza-circuit-2020-layout-25ed955115094de382935aa6d1a1e9c6)
+
+The model is used as the main racing environment and provides the 3D representation of the Monza circuit.
+
+### 🏎️ Scuderia Ferrari F1 SF23
+
+**Asset:** Scuderia Ferrari F1 SF23 – 2023  
+**Source:** [View model on Sketchfab](https://sketchfab.com/3d-models/scuderia-ferrari-f1-sf23-2023-ecb0f812bc454331bbe721655b0780ec)
+
+The model is used as the main playable bolide in the project.
+
+> **Credits:** The 3D assets are used for educational and development purposes. Please refer to the original Sketchfab pages for information about the creators and the licenses under which the models were published.
+
 ## 🎥 Camera Modes
 
 The camera can operate in several modes:
