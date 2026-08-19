@@ -27,12 +27,9 @@ The current version of the project includes:
 ![Track view](Images/gameplay_track.png)
 
 ### Bolide Front View
+![Bolide front view](Images/gameplay_bolide_front.png)
 
-![Bolide view](Images/gameplay_bolide_front.png)
- 
 ### Bolide Back View
-
-![Bolide view](Images/gameplay_bolide.png)
 
 ### Driver / Cockpit View
 
