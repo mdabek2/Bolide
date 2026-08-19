@@ -1,140 +1,140 @@
 # Bolide
 
-Projekt gry wyścigowej 3D wykonanej w języku **C++** z wykorzystaniem **OpenGL**. Celem projektu jest stworzenie środowiska, w którym można sterować bolidem Formuły 1 poruszającym się po odwzorowanym torze **Monza**.
+A 3D racing game project developed in **C++** using **OpenGL**. The goal of the project is to create an environment where the player can control a Formula 1 car driving on a recreated **Monza** circuit.
 
-Projekt jest rozwijany jako aplikacja desktopowa dla systemu Windows w środowisku Visual Studio.
+The project is developed as a desktop application for Windows using Visual Studio.
 
-## 🎮 Aktualne możliwości
+## 🎮 Current Features
 
-W obecnej wersji projektu dostępne są m.in.:
+The current version of the project includes:
 
-- renderowanie sceny 3D z wykorzystaniem OpenGL,
-- odwzorowany tor Monza,
-- model 3D bolidu Formuły 1,
-- tekstury i materiały modeli,
-- skybox otaczający scenę,
-- oświetlenie kierunkowe,
-- mapowanie cieni (shadow mapping),
-- obsługa głębi sceny (depth testing),
-- przezroczystość obiektów z wykorzystaniem blendingu,
-- ruch bolidu zależny od jego aktualnego kierunku obrotu,
-- przyspieszanie i hamowanie bolidu,
-- ograniczenie maksymalnej prędkości,
-- tarcie powodujące stopniowe wytracanie prędkości,
-- skręcanie bolidu podczas jazdy,
-- możliwość zatrzymania bolidu,
-- kilka trybów pracy kamery.
+- 3D scene rendering using OpenGL,
+- a recreated Monza circuit,
+- a 3D Formula 1 car model,
+- textures and materials,
+- a surrounding skybox,
+- directional lighting,
+- shadow mapping,
+- depth testing,
+- object transparency using blending,
+- car movement based on its current orientation,
+- acceleration and braking,
+- maximum speed limitation,
+- friction and gradual deceleration,
+- steering while driving,
+- the ability to stop the car,
+- several camera modes.
 
-## 📷 Wygląd gry
+## 📷 Game Screenshots
 
-### Widok toru
+### Track View
 
-> **Miejsce na zdjęcie:**
+> **Screenshot placeholder:**
 >
-> `![Widok toru](images/gameplay_track.png)`
+> `![Track view](images/gameplay_track.png)`
 
-### Widok bolidu
+### Bolide View
 
-> **Miejsce na zdjęcie:**
+> **Screenshot placeholder:**
 >
-> `![Widok bolidu](images/gameplay_bolide.png)`
+> `![Bolide view](images/gameplay_bolide.png)`
 
-### Widok z kokpitu
+### Driver / Cockpit View
 
-> **Miejsce na zdjęcie:**
+> **Screenshot placeholder:**
 >
-> `![Widok z kokpitu](images/gameplay_driver.png)`
+> `![Driver view](images/gameplay_driver.png)`
 
-### Dodatkowy zrzut ekranu
+### Additional Gameplay Screenshot
 
-> **Miejsce na zdjęcie:**
+> **Screenshot placeholder:**
 >
 > `![Gameplay](images/gameplay.png)`
 
-Zdjęcia można dodać później do katalogu `images/` w repozytorium.
+Screenshots can be added later to the `images/` directory.
 
-## 🎥 Tryby kamery
+## 🎥 Camera Modes
 
-Kamera może pracować w kilku trybach:
+The camera can operate in several modes:
 
-| Klawisz | Tryb |
+| Key | Mode |
 |---|---|
-| `0` | Swobodna kamera |
-| `1` | Kamera z perspektywy głowy kierowcy |
-| `2` | Kamera za bolidem |
-| `3` | Kamera przed bolidem |
+| `0` | Free camera |
+| `1` | Driver head view |
+| `2` | Camera behind the bolide |
+| `3` | Front view |
 
-### Kamera swobodna
+### Free Camera
 
-W trybie swobodnym kamera może być przemieszczana po scenie, a kierunek patrzenia jest sterowany za pomocą myszy przytrzymującej prawy przycisk.
+In free camera mode, the camera can be moved around the scene. The viewing direction is controlled with the mouse while holding the right mouse button.
 
-## 🏎️ Sterowanie bolidem
+## 🏎️ Controls
 
-| Klawisz | Działanie |
+| Key | Action |
 |---|---|
-| `↑` | Przyspieszanie |
-| `↓` | Hamowanie / jazda do tyłu |
-| `←` | Skręt w lewo |
-| `→` | Skręt w prawo |
-| `P` | Zatrzymanie bolidu |
-| `ESC` | Zamknięcie programu |
+| `↑` | Accelerate |
+| `↓` | Brake / reverse |
+| `←` | Turn left |
+| `→` | Turn right |
+| `P` | Stop the bolide |
+| `ESC` | Exit the application |
 
-Ruch bolidu jest obliczany względem jego aktualnej orientacji, dzięki czemu przyspieszanie powoduje ruch w kierunku, w którym zwrócony jest bolid.
+The bolide movement is calculated relative to its current orientation, so accelerating moves the car in the direction in which it is facing.
 
-## 🛠️ Technologie i biblioteki
+## 🛠️ Technologies and Libraries
 
-Projekt wykorzystuje:
+The project uses:
 
 - **C++20**,
-- **OpenGL** – renderowanie grafiki 3D,
-- **GLFW** – obsługa okna, klawiatury i myszy,
-- **GLEW** – dostęp do rozszerzeń OpenGL,
-- **GLM** – operacje matematyczne i transformacje 3D,
-- **Assimp** – import modeli 3D,
-- **SOIL2** – obsługa tekstur,
-- **GLSL** – programowanie shaderów wierzchołków i fragmentów.
+- **OpenGL** – 3D graphics rendering,
+- **GLFW** – window, keyboard and mouse handling,
+- **GLEW** – OpenGL extension handling,
+- **GLM** – mathematical operations and 3D transformations,
+- **Assimp** – 3D model importing,
+- **SOIL2** – texture loading,
+- **GLSL** – vertex and fragment shader programming.
 
-Biblioteki znajdują się w katalogu `Dependencies/`.
+The required libraries are included in the `Dependencies/` directory.
 
-## 📁 Struktura projektu
+## 📁 Project Structure
 
 ```text
 Bolide/
 ├── Bolide.slnx
 ├── Bolide/
-│   ├── inc/                 # Pliki nagłówkowe klas i komponentów
-│   ├── src/                 # Kod źródłowy aplikacji
+│   ├── inc/                 # Header files for project classes and components
+│   ├── src/                 # Application source code
 │   │   └── main.cpp
-│   ├── shaders_config/      # Shadery GLSL
-│   └── Bolide.vcxproj       # Konfiguracja projektu Visual Studio
-├── Dependencies/            # Biblioteki zewnętrzne
+│   ├── shaders_config/      # GLSL shaders
+│   └── Bolide.vcxproj       # Visual Studio project configuration
+├── Dependencies/            # External libraries
 └── README.md
 ```
 
-Najważniejsze elementy projektu obejmują m.in. klasy odpowiedzialne za kamerę, shadery, modele 3D, tekstury, skybox oraz cienie.
+The main project components include classes responsible for the camera, shaders, 3D models, textures, skybox and shadows.
 
-## ▶️ Uruchomienie projektu
+## ▶️ Building and Running
 
-1. Sklonuj repozytorium.
-2. Otwórz plik `Bolide.slnx` w Visual Studio.
-3. Upewnij się, że wybrana jest konfiguracja `x64`.
-4. Zbuduj projekt.
-5. Uruchom aplikację.
+1. Clone the repository.
+2. Open `Bolide.slnx` in Visual Studio.
+3. Make sure the `x64` configuration is selected.
+4. Build the project.
+5. Run the application.
 
-Projekt jest skonfigurowany dla **C++20** i wykorzystuje biblioteki znajdujące się w katalogu `Dependencies/`.
+The project is configured for **C++20** and uses the libraries included in the `Dependencies/` directory.
 
-## 🌍 Scena 3D
+## 🌍 3D Scene
 
-Główną scenę stanowi model toru **Monza**, na którym umieszczony został model bolidu Formuły 1. Scena wykorzystuje osobne shadery dla głównych obiektów oraz skyboxa. Cienie są generowane w osobnym przebiegu renderowania z wykorzystaniem mapy głębokości.
+The main scene consists of a **Monza** circuit model with a Formula 1 bolide placed on the track. Separate shaders are used for the main objects and the skybox. Shadows are generated in a separate rendering pass using a depth map.
 
-## 🚧 Dalszy rozwój projektu
+## 🚧 Future Development
 
-Kolejnym planowanym etapem rozwoju projektu jest **dodanie grawitacji i fizyki ruchu bolidu**.
+The next planned step is to **implement gravity and more advanced physics for the bolide**.
 
-Grawitacja będzie szczególnie istotna ze względu na to, że tor nie znajduje się na jednej wysokości. Docelowo ruch bolidu powinien uwzględniać ukształtowanie toru, a nie tylko przesuwać model po płaszczyźnie XZ.
+Gravity will be particularly important because the track is not completely flat and contains changes in elevation. Ultimately, the bolide's movement should take the actual shape and height of the track into account instead of simply moving across the XZ plane.
 
-Planowane są również dalsze usprawnienia fizyki oraz zachowania bolidu, aby jego ruch był bardziej realistyczny.
+Further improvements to the physics and driving behavior are also planned to make the movement of the bolide more realistic.
 
-## 📌 Status projektu
+## 📌 Project Status
 
-Projekt jest w trakcie rozwoju. Podstawowy system renderowania sceny, obsługa modeli 3D, kamera oraz podstawowy model ruchu bolidu są już zaimplementowane. Kolejne prace koncentrują się na rozbudowie fizyki i poprawie realizmu jazdy.
+The project is currently under development. The basic rendering system, 3D models, camera system and basic bolide movement have already been implemented. Further development is focused on expanding the physics system and improving the realism of driving.
